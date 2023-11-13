@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -26,6 +27,15 @@
             background-color: beige;
             color: blue;
         }
+        thead > tr> th{
+            position: sticky;
+            top: 0;
+            background-color: azure;
+        }
+        tbody> tr:nth-child(odd){
+            background-color: darkgray;
+        }
+            
         tfoot{
             background-color: beige;
             color: blue;
